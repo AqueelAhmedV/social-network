@@ -1,14 +1,15 @@
 {
-  "name": "social_network",
+  "name": "social-network",
   "version": "1.0.0",
   "description": "Social Network MERN stack App",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "front-install": "cd ../social-network-react && npm install",
-    "front": "cd ../social-network-react && npm start ",
-    "dev": "concurrently \"npm run server\" \"npm run front\"" 
+    "front-install": "cd client && npm install",
+    "front": "cd client && npm start ",
+    "dev": "concurrently \"npm run server\" \"npm run front\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Aqueel Ahmed V",
   "license": "MIT",
