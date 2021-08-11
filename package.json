@@ -1,0 +1,29 @@
+{
+  "name": "social_network",
+  "version": "1.0.0",
+  "description": "Social Network MERN stack App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "front-install": "cd ../social-network-react && npm install",
+    "front": "cd ../social-network-react && npm start ",
+    "dev": "concurrently \"npm run server\" \"npm run front\"" 
+  },
+  "author": "Aqueel Ahmed V",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
